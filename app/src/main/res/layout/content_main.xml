@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.cosborn.dbrecoreder.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/backColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/splModeTV"
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:background="@color/backColor"
+            android:clickable="false"
+            android:padding="2px"
+            android:scrollbars="none"
+            android:text="FAST"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/splTV"
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:background="@color/backColor"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:lines="2"
+            android:scrollbars="none"
+            android:text="  33.32"
+            android:textColor="@color/textColor"
+            android:textSize="80px"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="false">
+
+                <Button
+                    android:id="@+id/splOnOffB"
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="20px"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:ellipsize="start"
+                    android:fadingEdge="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="ON"
+                    android:textColor="@color/buttonText"></Button>
+
+                <Button
+                    android:id="@+id/splLogB"
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:text="LOG"
+                    android:textColor="@color/buttonText"
+                    android:visibility="visible"></Button>
+
+                <Button
+                    android:id="@+id/splMaxB"
+                    android:layout_width="200px"
+                    android:layout_height="120px"
+                    android:layout_marginTop="20px"
+                    android:text="MAX"
+                    android:textColor="@color/buttonText"
+                    android:visibility="visible"></Button>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/splModeB"
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="30px"
+                    android:text="SLOW"
+                    android:visibility="visible"></Button>
+
+                <Button
+                    android:id="@+id/Button03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button03"
+                    android:visibility="invisible"></Button>
+
+                <Button
+                    android:id="@+id/splCalibB"
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:padding="2px"
+                    android:text="CALIB"
+                    android:textColor="@color/buttonText"
+                    android:visibility="visible"></Button>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button01"
+                    android:visibility="invisible"></Button>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/Button02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button02"
+                    android:visibility="invisible"></Button>
+
+                <ImageButton
+                    android:id="@+id/splCalibUpB"
+                    android:layout_width="80px"
+                    android:layout_height="120px"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/up"
+                    android:clickable="true"
+                    android:cropToPadding="false"
+                    android:visibility="invisible"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/splCalibDownB"
+                    android:layout_width="50px"
+                    android:layout_height="120px"
+                    android:background="@drawable/down"
+                    android:visibility="invisible"></ImageButton>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/StartButton"
+                    android:text="START"></Button>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
